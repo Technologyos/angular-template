@@ -1,0 +1,53 @@
+$prefix: technologyos-;
+
+$white:    #fff;
+$gray-100: #f6f7fb;
+$gray-200: #eef2f7;
+$gray-300: #e7e9eb;
+$gray-400: #ced4da;
+$gray-500: #a1a9b1;
+$gray-600: #8a969c;
+$gray-700: #6c757d;
+$gray-800: #343a40;
+$gray-900: #313a46;
+$black:    #000;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+
+$blue:       #02c0ce;
+$indigo:     #777edd;
+$purple:     #777edd;
+$pink:       #ff679b;
+$red:        #f1556c;
+$orange:     #fd7e14;
+$yellow:     #f9bc0b;
+$green:      #0acf97;
+$teal:       #02bc9c;
+$cyan:       #45bbe0;
+
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
