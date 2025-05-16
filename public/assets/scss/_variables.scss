@@ -1,4 +1,4 @@
-$prefix: technologyos- !default;
+$prefix: technologyos-;
 
 $white:    #fff;
 $gray-100: #f6f7fb;
@@ -51,3 +51,11 @@ $colors: (
   "gray":       $gray-600,
   "gray-dark":  $gray-800
 );
+
+$grid-gutter-width:   1.5rem;
+
+$transition-base:     all .25s ease-in-out;
+
+$card-border-color:   var(--#{$prefix}border-color);
+
+$spacer: 1.5rem;
