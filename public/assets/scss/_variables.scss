@@ -52,6 +52,26 @@ $colors: (
   "gray-dark":  $gray-800
 );
 
+$primary:       $blue;
+$secondary:     $purple;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-900;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+);
+
 $grid-gutter-width:   1.5rem;
 
 $transition-base:     all .25s ease-in-out;
@@ -59,3 +79,25 @@ $transition-base:     all .25s ease-in-out;
 $card-border-color:   var(--#{$prefix}border-color);
 
 $spacer: 1.5rem;
+
+
+$font-family-sans-serif:      "Nunito Sans", sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$font-family-base:            var(--#{$prefix}font-sans-serif);
+$font-family-code:            var(--#{$prefix}font-monospace);
+
+$font-size-root:              null;
+$font-size-base:              0.875rem;
+$font-size-sm:                $font-size-base - .025;
+$font-size-lg:                $font-size-base * 1.25;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+$font-weight-base:            $font-weight-normal;
