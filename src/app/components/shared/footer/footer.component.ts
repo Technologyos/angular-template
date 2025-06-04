@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './footer.component.html'
 })
-export class FooterComponent { }
+export class FooterComponent {
+  scrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+}
