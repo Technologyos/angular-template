@@ -11,6 +11,7 @@ import {
 } from '@angular/common/http';
 
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideClientHydration } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -19,5 +20,6 @@ export const appConfig: ApplicationConfig = {
 
     provideHttpClient(withFetch()),
     provideAnimations(),
+    provideClientHydration()
   ]
 };
