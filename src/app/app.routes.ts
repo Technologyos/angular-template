@@ -1,14 +1,22 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
+import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent,
-    loadChildren: () => import('./views/views.route').then((mod) => mod.VIEWS_ROUTES),
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
   },
   {
-    path: '**',
-    redirectTo: ''
+    path: '',
+    component: MainLayoutComponent,
+    loadChildren: () =>
+      import('./views/views.route').then((mod) => mod.VIEWS_ROUTES),
+  },
+  {
+    path: 'auth',
+    component: AuthLayoutComponent,
+    loadChildren: () => import('./views/auth/auth.route').then((mod) => mod.AUTH_ROUTES),
   }
 ];
