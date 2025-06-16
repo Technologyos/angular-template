@@ -1,22 +1,32 @@
 <h4 class="fw-semibold mb-2">Log in to your account</h4>
 
-@if(errorMessage.length > 0){
-<p class="fs-14 text-danger">
+<p *ngIf="errorMessage.length > 0" class="fs-14 text-danger">
   {{ errorMessage }}
 </p>
-}
 
 <form [formGroup]="signInForm" (ngSubmit)="login()" class="text-start mb-3">
   <div class="mb-3">
     <label class="form-label" for="example-email">Email</label>
-    <input formControlName="email" type="email" id="example-email" class="form-control" placeholder="Enter your email"
-      [ngClass]="{ 'is-invalid': submitted && formValues['email'].errors }" />
+    <input
+      formControlName="email"
+      type="email"
+      id="example-email"
+      class="form-control"
+      placeholder="Enter your email"
+      [ngClass]="{ 'is-invalid': submitted && formValues['email'].errors }"
+    />
   </div>
 
   <div class="mb-3">
     <label class="form-label" for="example-password">Password</label>
-    <input type="password" formControlName="password" id="example-password" class="form-control"
-      placeholder="Enter your password" [ngClass]="{ 'is-invalid': submitted && formValues['password'].errors }" />
+    <input
+      type="password"
+      formControlName="password"
+      id="example-password"
+      class="form-control"
+      placeholder="Enter your password"
+      [ngClass]="{ 'is-invalid': submitted && formValues['password'].errors }"
+    />
   </div>
 
   <div class="d-grid">
@@ -26,5 +36,8 @@
 
 <p class="text-muted fs-14 mb-4">
   Don't have an account?
-  <a routerLink="/auth/register" class="fw-semibold text-danger ms-1">Sign Up</a>
+  <a routerLink="/auth/register" class="fw-semibold text-danger ms-1"
+    >Sign Up</a
+  >
 </p>
+
