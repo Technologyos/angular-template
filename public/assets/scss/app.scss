@@ -1,4 +1,2 @@
-@use "bootstrap/scss/functions";
-@use "bootstrap/scss/bootstrap";
-
-@use "pages/authentication" as *;
+@use 'base';
+@use 'pages';
