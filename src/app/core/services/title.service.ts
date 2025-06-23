@@ -29,7 +29,7 @@ export class TitleService {
 
     if (route.snapshot.data['title']) {
       this.titleService.setTitle(
-        route.snapshot.data['title'] + ' | AppName - Admin Dashboard'
+        route.snapshot.data['title'] + ' | Technologyos - Admin Dashboard'
       )
     }
   }
