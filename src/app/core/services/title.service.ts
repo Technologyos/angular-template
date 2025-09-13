@@ -8,10 +8,10 @@ import { filter } from 'rxjs/operators'
 })
 export class TitleService {
   constructor(
-    private titleService: Title,
-    private router: Router,
-    private activatedRoute: ActivatedRoute
-  ) {}
+    private readonly titleService: Title,
+    private readonly router: Router,
+    private readonly activatedRoute: ActivatedRoute
+  ) { }
 
   init(): void {
     this.router.events
